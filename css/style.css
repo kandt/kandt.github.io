@@ -568,7 +568,8 @@ textarea {
 	text-decoration: none;
 }
 .site-slogan {
-	font-size: 12px;
+	font-size: 25px;
+	font-family:"lucida calligraphy";
 }
 
 /* Testimonials
