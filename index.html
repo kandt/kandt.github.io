@@ -96,7 +96,7 @@
 											<ul class="nav navbar-nav navbar-right">
 												<li class="active"><a href="#banner">Home</a></li>
 												<li><a href="#event">Event</a></li>
-											  <li><a href="#cnt">Counter</a></li>
+											  <li><a href="#acc">Accomodation</a></li>
 												<li><a href="#rsvp">RSVP</a></li>
 											</ul>
 										</div>
@@ -127,6 +127,7 @@
 						<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
 							<h1 class="text-center">We are getting <span>married</span></h1>
 							<p class="lead text-center">July 23rd 2016, Minneapolis (Minnesota)</p>
+							<div class = "lead text-center" id="getting-started"></div>
 						</div>
 
 
@@ -148,7 +149,7 @@
 						<div class="space"></div>
 						<div class="row">
 							<div class="col-md-6">
-								<img src="images/ww.jpg" alt="">
+								<img src="images/kt.jpg" alt="">
 							</div>
 							<div class="col-md-6">
 								<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
@@ -162,6 +163,8 @@
 										</div>
 										<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 											<div class="panel-body">
+													<b>Location</b>: </br>
+													<b>Time</b>: 11:15am - 12:30 am
 											</div>
 										</div>
 									</div>
@@ -175,6 +178,8 @@
 										</div>
 										<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
 											<div class="panel-body">
+													<b>Location</b>:</br>
+													<b>Time</b>: 12:30pm - 2:00pm
 											</div>
 										</div>
 									</div>
@@ -188,6 +193,8 @@
 										</div>
 										<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
 											<div class="panel-body">
+																	<b>Location</b>: </br>
+																	<b>Time</b>: 5:30pm - 12:00pm
 											</div>
 										</div>
 									</div>
@@ -202,11 +209,13 @@
 
 		<div class="section">
 			<div class="container">
-				<h1 class="text-center title" id="us"><span>Countdown</span></h1>
+				<h1 class="text-center title" id="acc"><span>Accomodation</span></h1>
 				<div class="separator"></div>
 				<div class="col-md-8 col-md-offset-2 object-non-visible" data-animation-effect="fadeIn">
-					<div class="clock" style="margin:2em;"></div>
+					<!-- <div class="clock" style="margin:2em;"></div> -->
+           <p class="lead text-center">Coming soon ...</p>
 				</div>
+
 			</div>
 			</div>
 
@@ -227,7 +236,7 @@
 
 					<div class="row">
 						<div class="col-md-6">
-							
+
 						</div>
 						<div class="col-md-6">
 							<a href="http://goo.gl/forms/7Pn4ABi5lS" class="rsvp" title="RSVP"></a>
@@ -302,11 +311,12 @@
 
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 
-		<script src="js/flipclock.min.js"></script>
+		<!-- <script src="js/flipclock.min.js"></script>
 
-		<script src="js/flipclock.js"></script>
-
-		<script type="text/javascript">
+		<script src="js/flipclock.js"></script> -->
+    <script src="js/jquery.countdown.js"></script>
+		<script src="js/jquery.countdown.min.js"></script>
+		<!-- <script type="text/javascript">
 		var clock;
 
 			$(document).ready(function() {
@@ -326,7 +336,15 @@
 					countdown: true
 				});
 			});
-		</script>
+		</script> -->
 
+	 <script type="text/javascript">
+	    $("#getting-started")
+	    .countdown("2016/07/23", function(event) {
+	      $(this).text(
+	        event.strftime('%D days %H:%M:%S')
+	      );
+	    });
+	  </script>
 	</body>
 </html>
