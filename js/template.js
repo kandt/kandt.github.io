@@ -10,7 +10,7 @@
 (function($){
 	$(document).ready(function(){
 
-		$(".banner-image").backstretch('images/banner-5.jpg');
+		$(".banner-image").backstretch('images/kt-7.jpg');
 
 		// Fixed header
 		//-----------------------------------------------
