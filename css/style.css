@@ -519,7 +519,7 @@ textarea {
 }
 .fixed-header-on .logo {
 	-webkit-transform: scale(0.4);
-	transform: scale(0.4);
+	transform: scale(0.8);
 	margin-top: 0;
 	margin-bottom: 0;
 }
